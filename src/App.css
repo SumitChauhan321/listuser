@@ -1,38 +1,85 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+.App{
+  background-color: rgba(0, 187, 255, 0.377);
+}
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+  
+}
+
+.heading {
+  background-color: rgb(92, 219, 148);
+  color: white;
   text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  display: flex;
+  border: 1px solid yellowgreen;
+  width: 300px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card:last-child {
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-div {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  border-radius: 10px;
+}
+
+.user-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.mini-box {
+  display: flex;
+  background-color: rgba(159, 162, 167, 0.129);
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.username {
+  font-weight: bold;
+}
+
+.type {
+  font-size: 14px;
+}
+
+.mini-heading {
+  font-size: 12px;
+  color: rgb(160, 163, 168);
+}
+
+.mini-heading~div {
+  font-weight: bold;
+  font-size: 13px;
 }
